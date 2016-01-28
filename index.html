@@ -2,14 +2,14 @@
 <html>
   <head>
   	<title>Gllacy - главная</title>
-	  <meta charset="utf-8">
-	  <link rel="stylesheet" href="css/normalize.css">
-	  <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-    	<div class="header-logo">
-        <a href="index.html"><img src="http://placehold.it/160x70" width="160" height="70" alt="logo"></a>
+      <div class="header-logo">
+        <img src="http://placehold.it/160x70" width="160" height="70" alt="logo">
       </div>
 
       <nav class="header-menu">
@@ -18,7 +18,7 @@
 
             <ul class="header-sub-menu">
               <li><a href="#">Новинки</a></li>
-              <li><a href="#">Сливочное</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -31,7 +31,7 @@
       </nav>
 
       <div class="header-search">
-        <button class="search-button"><a href="#"></a></button>
+        <a href="#search"></a>
 
         <div class="search-field">
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -41,14 +41,14 @@
       </div>
 
       <div class="header-login">
-        <button class="login-button"><a href="#">Вход</a></button>
+        <a href="#login">Вход</a>>
 
         <div class="login-field">
           <form action="https://echo.htmlacademy.ru" method="post">
             <input type="email" name="email" placeholder="Электронная почта">
-            <br>
+            
             <input type="password" name="pass" placeholder="Пароль">
-            <br>
+            
             <input type="submit" value="Войти" name="submit_button">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -57,22 +57,23 @@
       </div>
 
       <div class="header-cart">
-        <button class="cart-button"><a href="#">Пусто</a></button>
+        <a href="#cart">Пусто</a>
 
         <div class="cart-field">
           <ul>
-            <li><img src="#" width="" height="">Пломбир с апельсиновым джемом</li>
-            <li><img src="#" width="" height="">Клубничный пломбир с присыпкой из белого шоколада</li>
+            <li><a href="#X"></a><p>Пломбир с апельсиновым джемом</p><p>1,5кг<span>x200руб.</span></p><p>300руб.</p></li>
+            <li><a href="#X"></a><p>Клубничный пломбир с присыпкой из белого шоколада</p><p>1,5кг<span>x300руб.</span></p><p>450руб.</p></li>            
           </ul>
           
-          <span>Итого:750руб.</span>
+          <p>Итого:750руб.</p>
 
           <button>Оформить заказ</button>
         </div>
       </div>
 
       <div class="header-info">
-        <p>С 10 до 20, ежедневно<span>8 812 450-25-25</span></p>
+        <p>С 10 до 20, ежедневно</p>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
     </header>
 
@@ -90,7 +91,7 @@
       </div>
 
       <div class="banner-top">
-        <div class="banner-top-title"><b>Крем-брюле и пломбир с малиновым джемом</b></div>
+        <div class="banner-top-title">Крем-брюле и пломбир с малиновым джемом</div>
 
         <a class="banner-top-button" href="#">Давайте оба!</a>
       </div>
@@ -107,33 +108,29 @@
         <a href="#">Хочу шоколадки!</a>
       </div>
 
-      <div class="products">
+      <div class="products-promo">
         <ul>
           <li>
-            <img class="products-hit" src="" width="" height="" alt="hit">
             <img class="products-photo" src="" width="" height="" alt="orange">
-            <p><span>310</span>/кг</p>
+            <p><span>310&#8381;</span>/кг</p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
 
           <li>
-            <img class="products-hit" src="" width="" height="" alt="hit">
             <img class="products-photo" src="" width="" height="" alt="coffee">
-            <p><span>380</span>/кг</p>
+            <p><span>380&#8381;</span>/кг</p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </li>
 
           <li>
-            <img class="products-hit" src="" width="" height="" alt="hit">
             <img class="products-photo" src="" width="" height="" alt="strawberry">
-            <p><span>355</span>/кг</p>
+            <p><span>355&#8381;</span>/кг</p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
 
           <li>
-            <img class="products-hit" src="" width="" height="" alt="hit">
             <img class="products-photo" src="" width="" height="" alt="caramel">
-            <p><span>415</span>/кг</p>
+            <p><span>415&#8381;</span>/кг</p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
         </ul>
@@ -142,19 +139,11 @@
       <div class="seo">
         <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
 
-        <img class="seo-img-icecream" src="" width="" height="" alt="ice_cream">
-
-        <img class="seo-img-leaf" src="" width="" height="" alt="leaf">
-
         <div class="seo-column-left">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
-
-        <img class="seo-img-cow" src="" width="" height="" alt="cow">
-
-        <img class="seo-img-thermometer" src="" width="" height="" alt="thermometer">
 
         <div class="seo-column-right">
           <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
@@ -181,28 +170,26 @@
       </div>
 
       <div class="contacts">
-        <img src="#" width="" height="" alt="pointer">
-
         <div class="contacts-info">
           <p>Адрес главного офиса и офлайн магазина:
           <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
 
           <p>Для заказов по телефону:
-          <b>8 812 450-25-25</b>
+          <a href="tel:+78124502525">8 812 450-25-25</a>
           (с 10 до 20 ежедневно)</p>
 
-          <button class="feedback-button"><a href="#">Форма обратной связи</a></button>
+          <a href="#feedback">Форма обратной связи</a>
 
           <div class="feedback form">
             <form action="https://echo.htmlacademy.ru" method="post">
               <b>Мы обязательно вам ответим!</b>
-              <br>
+              
               <input type="text" name="username" placeholder="Как вас зовут?">
-              <br>
+              
               <input type="email" name="email" placeholder="Ваша почта для ответа?">
-              <br>
+              
               <textarea name="comment" rows="7" cols="30" placeholder="Напишите что-нибудь..."></textarea>
-              <br>
+              
               <input type="submit" value="Отправить" name="send_form">
             </form>
           </div>
