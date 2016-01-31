@@ -84,13 +84,6 @@
         </div>
       </div>
 
-      <div class="header-info">
-        <p>С 10 до 20, ежедневно</p>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
-      </div>
-    </header>
-
-    <main>
       <div class="breadcrumbs">
         <ul>
           <li><a href="#main">Главная</a></li>
@@ -99,49 +92,61 @@
         </ul>
       </div>
 
+      <div class="header-info">
+        <span>С 10 до 20, ежедневно</span>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
+    </header>
+
+    <main>
       <h2 class="catalog-title">Сливочное мороженое</h2>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>Сортировка:</p>
-        <select name="filter">
-          <option value="popular">по популярности</option>
-          <option value="cheap_first">сначала недорогие</option>
-          <option value="exp_first">сначала дорогие</option>
-          <option value="fatness">по жирности</option>
-        </select>
+      
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Сортировка:</p>
 
-        <div class="range-filter">
+          <select class="filter-type" name="filter-type">
+            <option value="popular">по популярности</option>
+            <option value="cheap_first">сначала недорогие</option>
+            <option value="exp_first">сначала дорогие</option>
+            <option value="fatness">по жирности</option>
+          </select>
+
+          <div class="range-filter">
             <div class="price-controls">
               Цена:<input class="min-price" type="text" value="100 руб.">
               -<input class="max-price" type="text" value="500 руб.">
             </div>
             
             <div class="range-controls">
-                <div class="scale"><div class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
             </div>
-        </div>
+          </div>
 
-        <p>Жирность:</p>
-        <ul class="fatness-filter">
-          <li><label><input type="radio" value="0%" name="fatness">0%</label></li>
-          <li><label><input type="radio" value="10%" name="fatness" checked>до 10%</label></li>
-          <li><label><input type="radio" value="30%" name="fatness">до 30%</label></li>
-          <li><label><input type="radio" value=">30%" name="fatness">выше 30%</label></li>
-        </ul>
+          <!-- <p>Жирность:</p> -->
+          <ul class="fatness-filter">
+            <li><label><input type="radio" value="0%" name="fatness">0%</label></li>
+            <li><label><input type="radio" value="10%" name="fatness" checked>до 10%</label>  </li>
+            <li><label><input type="radio" value="30%" name="fatness">до 30%</label></li>
+            <li><label><input type="radio" value=">30%" name="fatness">выше 30%</label></li>
+          </ul>
 
-        <p>Наполнители:</p>
-        <ul class="fillings-filter">
-          <li><label><input type="checkbox" name="choco" checked="">шоколадные</label></li>
-          <li><label><input type="checkbox" name="powder" checked="">сахарные присыпки</label></li>
-          <li><label><input type="checkbox" name="fruits">фрукты</label></li>
-          <li><label><input type="checkbox" name="syrup">сиропы</label></li>
-          <li><label><input type="checkbox" name="jam">джемы</label></li>
-        </ul>        
+          <p>Наполнители:</p>
+          <ul class="fillings-filter">
+            <li><label><input type="checkbox" name="choco" checked="">шоколадные</label></li>
+            <li><label><input type="checkbox" name="powder" checked="">сахарные присыпки</label></li>
+            <li><label><input type="checkbox" name="fruits">фрукты</label></li>
+            <li><label><input type="checkbox" name="syrup">сиропы</label></li>
+            <li><label><input type="checkbox" name="jam">джемы</label></li>
+          </ul>        
 
-        <input type="submit" value="Применить" name="filter-button">
-      </form>
+          <input type="submit" value="Применить" name="filter-button">
+        </form>
+      
 
       <div class="products">
         <ul>
@@ -246,24 +251,24 @@
 
     <footer>
     	<div class="footer-social">
-       <ul>
-         <li class="icon-tw"><a href="#twitter"></a></li>
-         <li class="icon-inst"><a href="#instagram"></a></li>
-         <li class="icon-fb"><a href="#facebook"></a></li>
-         <li class="icon-vk"><a href="#vkontakte"></a></li>
-       </ul> 
+        <ul>
+          <li class="icon-tw"><a href="#twitter"></a></li>
+          <li class="icon-inst"><a href="#instagram"></a></li>
+          <li class="icon-fb"><a href="#facebook"></a></li>
+          <li class="icon-vk"><a href="#vkontakte"></a></li>
+        </ul> 
       </div>
 
       <div class="footer-sub-menu">
         <ul>
-          <li><a href="#">&#9829; Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
 
-      <div class="footer-develop">
+      <div class="footer-developer">
         <img src="img/developer_logo.svg" width="108" height="37" alt="dev_logo">
 
         <p>Сделано в <a href="#htmlacademy">HTML Academy</a> &#169; 2016</p>

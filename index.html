@@ -15,7 +15,6 @@
       <nav class="header-menu">
         <ul>
           <li><a href="#shop">Каталог</a>
-
             <ul class="header-sub-menu">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -41,7 +40,7 @@
       </div>
 
       <div class="header-login">
-        <a href="#login">Вход</a>>
+        <a href="#login">Вход</a>
 
         <div class="login-field">
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -85,13 +84,13 @@
       </div>
 
       <div class="header-info">
-        <p>С 10 до 20, ежедневно</p>
+        <span>С 10 до 20, ежедневно</span>
         <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
     </header>
 
     <main>
-      <div class="toggle">
+      <div class="banner-toggle">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
         <input type="radio" id="btn-3" name="toggle">
@@ -109,16 +108,18 @@
         <a class="banner-top-button" href="#">Давайте оба!</a>
       </div>
 
-      <div class="banner-left">
-        <b>Малинка даром!</b>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#">Хочу варенье!</a>
-      </div>
+      <div class="banner-wrapper">
+        <div class="banner-left">
+          <b>Малинка даром!</b>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#">Хочу варенье!</a>
+        </div>
 
-      <div class="banner-right">
-        <b>Шоколадки даром!</b>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#">Хочу шоколадки!</a>
+        <div class="banner-right">
+          <b>Шоколадки даром!</b>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a href="#">Хочу шоколадки!</a>
+        </div>
       </div>
 
       <div class="products-promo">
@@ -165,20 +166,22 @@
         </div>
       </div>
 
-      <div class="blog-news">
-        <p>Новое в нашем блоге</p>
+      <div class="subscribe-and-news-wrapper">
+        <div class="blog-news">
+          <p>Новое в нашем блоге</p>
 
-        <a href="#blog_news">10 способов сервировки фруктовых щербетов к столу</a>
-      </div>
+          <a href="#blog_news">10 способов сервировки фруктовых щербетов к столу</a>
+        </div>
 
-      <div class="subscribe">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+        <div class="subscribe">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 
-        <div class="subscribe-form">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" id="email" placeholder="Электронная почта">
-            <input type="submit" value="Отправить" name="subscribe">
-          </form>
+          <div class="subscribe-form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" id="email" placeholder="Электронная почта">
+              <input type="submit" value="Отправить" name="subscribe">
+            </form>
+          </div>
         </div>
       </div>
 
@@ -193,7 +196,7 @@
 
           <a href="#feedback">Форма обратной связи</a>
 
-          <div class="feedback form">
+          <div class="feedback-form">
             <form action="https://echo.htmlacademy.ru" method="post">
               <b>Мы обязательно вам ответим!</b>
               
@@ -212,25 +215,25 @@
     </main>
 
     <footer>
-    	<div class="footer-social">
-       <ul>
-         <li class="icon-tw"><a href="#twitter"></a></li>
-         <li class="icon-inst"><a href="#instagram"></a></li>
-         <li class="icon-fb"><a href="#facebook"></a></li>
-         <li class="icon-vk"><a href="#vkontakte"></a></li>
-       </ul> 
+      <div class="footer-social">
+        <ul>
+          <li class="icon-tw"><a href="#twitter"></a></li>
+          <li class="icon-inst"><a href="#instagram"></a></li>
+          <li class="icon-fb"><a href="#facebook"></a></li>
+          <li class="icon-vk"><a href="#vkontakte"></a></li>
+        </ul> 
       </div>
 
       <div class="footer-sub-menu">
         <ul>
-          <li><a href="#">&#9829; Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
 
-      <div class="footer-develop">
+      <div class="footer-developer">
         <img src="img/developer_logo.svg" width="108" height="37" alt="dev_logo">
 
         <p>Сделано в <a href="#htmlacademy">HTML Academy</a> &#169; 2016</p>
