@@ -4,7 +4,7 @@
   	<title>Gllacy - главная</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -76,7 +76,7 @@
 		          <div class="cart-field">
 			          <table class="cart-table">
 			            <tr>
-			          	  <td><button class="item-delete" type="button" title="Удалить"></button></td>
+			          	  <td><a class="item-delete" title="Удалить"></a></td>
 			          	  <td><img src="img/orange.png" width="33" height="33" alt="orange"></td>
 			          	  <td>Пломбир с апельсиновым джемом</td>
 			          	  <td>1,5 кг<span> x 200 руб.</span></td>
@@ -84,7 +84,7 @@
 			          	</tr>
 
 			          	<tr>
-			          	  <td><button class="item-delete" type="button" title="Удалить"></button></td>
+			          	  <td><a class="item-delete" title="Удалить"></a></td>
 			          	  <td><img src="img/strawberry.png" width="33" height="33" alt="strawberry"></td>
 			          	  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
 			          	  <td>1,5 кг<span> x 300 руб.</span></td>
@@ -105,7 +105,7 @@
 
 	    <main>
 	      <div class="info">
-	        <span class="schedule">С 10 до 20, ежедневно</span>
+	        <div class="schedule">С 10 до 20, ежедневно</div>
 
 	        <a class="tel" href="tel:+78124502525">8 812 450-25-25</a>
 	      </div>
@@ -235,7 +235,7 @@
 	    </main>
 
 	    <div class="contacts">
-	      <div id="ya-map"></div>
+	      <div class="contacts-map" id="ya-map"></div>
 
 	      <div class="contacts-info">
 	        <p>Адрес главного офиса и<br> офлайн магазина:</p>
@@ -280,7 +280,7 @@
 
 	      <div class="footer-sub-menu">
 	        <div class="sub-menu-left">
-	          <span><a href="#1">Для поставщиков</a></span>
+	          <a class="sub-menu-marked" href="#1">Для поставщиков</a>
 
 	          <a href="#1">О производстве</a>
 	        </div>
@@ -302,7 +302,7 @@
 
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/scripts.min.js"></script>
 
   </body>
 </html>

@@ -4,7 +4,7 @@
   	<title>Gllacy - каталог</title>
 	  <meta charset="utf-8">
 	  <link rel="stylesheet" href="css/normalize.css">
-	  <link rel="stylesheet" href="css/style.css"> 
+	  <link rel="stylesheet" href="css/style.min.css"> 
   </head>
   <body>
     <header>
@@ -73,7 +73,7 @@
             <div class="cart-field">
               <table class="cart-table">
                 <tr>
-                  <td><button class="item-delete" type="button" title="Удалить"></button></td>
+                  <td><a class="item-delete" title="Удалить"></a></td>
                   <td><img src="img/orange.png" width="33" height="33" alt="orange"></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5 кг<span> x 200 руб.</span></td>
@@ -81,7 +81,7 @@
                 </tr>
 
                 <tr>
-                  <td><button class="item-delete" type="button" title="Удалить"></button></td>
+                  <td><a class="item-delete" title="Удалить"></a></td>
                   <td><img src="img/strawberry.png" width="33" height="33" alt="strawberry"></td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>1,5 кг<span> x 300 руб.</span></td>
@@ -102,14 +102,14 @@
 
     <main>    
       <div class="info">
-        <span class="schedule">С 10 до 20, ежедневно</span>
+        <div class="schedule">С 10 до 20, ежедневно</div>
         <a class="tel" href="tel:+78124502525">8 812 450-25-25</a>
       </div>
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#catalog">Каталог</a></li>
-        <li>Сливочное</li>
+        <li><a class="breadcrumbs-active">Сливочное</a></li>
       </ul>
 
       <h2 class="catalog-title">Сливочное мороженое</h2>
@@ -118,12 +118,14 @@
         <div class="filter-type-wrapper">
           <div class="filter-type-name">Сортировка:</div>
 
-          <select class="filter-type" name="filter-type">
-            <option value="popular">по популярности</option>
-            <option value="cheap_first">сначала недорогие</option>
-            <option value="exp_first">сначала дорогие</option>
-            <option value="fatness">по жирности</option>
-          </select>
+          <div class="filter-type-container">
+            <select class="filter-type" name="filter-type">
+              <option value="popular">по популярности</option>
+              <option value="cheap_first">сначала недорогие</option>
+              <option value="exp_first">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+          </div>
         </div>
 
         <div class="range-filter">
@@ -163,13 +165,13 @@
           <div class="fillings-filter-name">Наполнители:</div>
           
           <div class="fillings-filter">
-            <input type="checkbox" id="btn-8" name="choco" checked>
+            <input type="checkbox" id="btn-8" name="choco" checked >
             <label for="btn-8">шоколадные</label>
 
-            <input type="checkbox" id="btn-9" name="powder" checked>
+            <input type="checkbox" id="btn-9" name="powder" checked >
             <label for="btn-9">сахарные присыпки</label>
 
-            <input type="checkbox" id="btn-10" name="fruits">
+            <input type="checkbox" id="btn-10" name="fruits" >
             <label for="btn-10">фрукты</label>
 
             <input type="checkbox" id="btn-11" name="syrup">
@@ -379,7 +381,7 @@
 
       <div class="footer-sub-menu">
         <div class="sub-menu-left">
-          <span><a href="#1">Для поставщиков</a></span>
+          <a class="sub-menu-marked" href="#1">Для поставщиков</a>
 
           <a href="#1">О производстве</a>
         </div>
