@@ -174,7 +174,6 @@ textarea:focus {
 
 .header-layout-column-left {
     float: left;
-    max-height: 70px;
     font-size: 0;
 }
 
@@ -216,7 +215,7 @@ textarea:focus {
 .header-menu > li > a {
     display: block;
     position: relative;
-    max-width: 160px;   
+    max-width: 190px;   
     padding: 6px 13px;
     padding-right: 14px;
     font-size: 16px;
@@ -257,7 +256,6 @@ textarea:focus {
     display: none;
     position: absolute;
     padding: 0;
-    top: 32px;
     left: -5px;
     padding-top: 5px;
     z-index: 1;
@@ -344,7 +342,7 @@ li .header-sub-menu-active {
     background: url('../img/sprite.png') no-repeat -8px -340px;
 }
 
-.header-search > a {
+.header-search-link {
     display: block;
     width: 32px;
     height: 32px;
@@ -353,7 +351,7 @@ li .header-sub-menu-active {
     border-radius: 50%;
 }
 
-.header-search:hover > a {
+.header-search:hover .header-search-link {
     background: #f8f7f4;
 }
 
@@ -363,8 +361,7 @@ li .header-sub-menu-active {
 
 .search-field-wrapper {
     display: none;
-    position: absolute;    
-    top: 32px;
+    position: absolute;
     right: 0px;
     padding-top: 4px;
     z-index: 1;
@@ -416,7 +413,7 @@ li .header-sub-menu-active {
     background: url('../img/sprite.png') no-repeat -10px -265px;
 }
 
-.header-login > a {
+.header-login-link {
     display: block;
     max-width: 150px;
     min-height: 18px;
@@ -433,7 +430,7 @@ li .header-sub-menu-active {
     text-decoration: none;
 }
 
-.header-login:hover > a{
+.header-login:hover .header-login-link{
     background: #f8f7f4;
     color: #000000;
 }
@@ -445,7 +442,6 @@ li .header-sub-menu-active {
 .login-field-wrapper {
     display: none;
     position: absolute;
-    top: 31px;
     right: 1px;
     padding-top: 5px;
     z-index: 1;
@@ -536,7 +532,7 @@ li .header-sub-menu-active {
     background: url('../img/sprite.png') no-repeat -9px -47px;
 }
 
-.header-cart > a{
+.header-cart-link{
     display: block;    
     max-width: 150px;
     min-height: 16px;
@@ -552,7 +548,7 @@ li .header-sub-menu-active {
     text-decoration: none;
 }
 
-.header-cart:hover > a {
+.header-cart:hover > .header-cart-link {
     background: #f8f7f4;
     color: #000000;
 }
@@ -564,7 +560,6 @@ li .header-sub-menu-active {
 .cart-field-wrapper {
     display: none;
     position: absolute;
-    top: 32px;
     right: -2px;
     padding-top: 4px;
     z-index: 1;
@@ -862,12 +857,12 @@ body > input[type=radio] {
 
 .banner-left {
     margin-right: 2.2%;
-    background: #ab3454 url('../img/raspberry_background.jpg') no-repeat 20% center;
+    background: #ab3454 url('../img/raspberry_background.jpg') repeat 20% center;
     background-size:  auto;
 }
 
 .banner-right {
-    background: #6f5049 url('../img/choco_background.jpg') no-repeat 80% center;
+    background: #6f5049 url('../img/choco_background.jpg') repeat 80% center;
     background-size: auto;
 }
 
@@ -1017,7 +1012,6 @@ body > input[type=radio] {
     position: absolute;
     display: none;
     left: 50%;
-    bottom: -40px;
     width: 70%;
     margin-left: -37%;
     padding-top: 8px;
@@ -1331,6 +1325,27 @@ body > input[type=radio] {
     display: block;
 }
 
+@keyframes bounce {
+    0% { transform: translateY(-2000px); }
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.feedback-form-show {
+    animation: bounce 0.6s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.feedback-form-error {
+    animation: shake 0.6s;
+}
+
 .feedback-form-close {
     position: absolute;
     top: 13px;
@@ -1426,12 +1441,17 @@ body > input[type=radio] {
 
 .breadcrumbs li{
     position: relative;
-    display: inline;
+    display: inline-block;
+    max-width: 170px;
     padding: 0;
     padding-right: 21px;
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.3;
+    line-height: 1.3;  
+    vertical-align: top; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .breadcrumbs li::after {
@@ -1457,17 +1477,18 @@ body > input[type=radio] {
 }
 
 .catalog-title{
+    max-width: 65%;
     margin: 0;
     margin-bottom: 31px;
     color: #ffffff;
     font-size: 35px;
     font-weight: bold;
-    line-height: 30px;    
+    line-height: 30px;  
 }
 
 .filter-form {
-    margin-bottom: 40px;
-    width: 858px;
+    margin-bottom: 26px;
+    max-width: 858px;
 }
 
 .filter-form::after {
@@ -1478,24 +1499,29 @@ body > input[type=radio] {
 
 .filter-type-wrapper{
     float: left;
-    width: 193px;
-    margin-right: 16px;
+    margin-right: 16px;    
+    margin-bottom: 14px;
 }
 
 .filter-type-name {
+    max-width: 170px;
     margin-bottom: 7px;
     padding-left: 16px;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;    
+    text-overflow: ellipsis;
 }
 
 .filter-type {
     display: block;
     min-width: 194px;
+    max-width: 230px;
     margin-left: -1px;
     padding-top: 6px;
     padding-bottom: 9px;
     padding-left: 11px;
-    padding-right: 12px;
+    padding-right: 25px;
     background: #aabab0;
     border-radius: 20px;
     border: none;
@@ -1505,6 +1531,7 @@ body > input[type=radio] {
     -moz-appearance: none;
     -ms-appearance: none;
     appearance: none;
+    text-overflow: ellipsis;
 }
 
 .filter-type::-ms-expand {
@@ -1541,7 +1568,8 @@ body > input[type=radio] {
 .range-filter{    
     float: left;
     width: 218px;
-    margin-right: 11px;
+    margin-right: 15px;
+    margin-bottom: 14px; 
     color: #ffffff;
 }
 
@@ -1549,7 +1577,16 @@ body > input[type=radio] {
     max-width: 195px;
     margin-bottom: 5px;
     margin-left: 15px;
-    font-size: 14px;
+    font-size: 14px;   
+    white-space: nowrap;
+}
+
+.price-controls span {
+    display: inline-block;
+    max-width: 40px;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .range-controls{
@@ -1620,20 +1657,24 @@ body > input[type=radio] {
 }
 
 .fatness-filter-wrapper{ 
-    float: right;       
+    float: left;     
     font-size: 0;
+    margin-bottom: 14px;
 }
 
 .fatness-filter-name {
+    max-width: 170px;
     margin-bottom: 7px;
     padding-left: 16px;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;    
+    text-overflow: ellipsis;
 }
 
-.fatness-filter {   
+.fatness-filter {  
     margin: 0;
     padding-top: 8px;
-    padding-bottom: 8px;
     padding-left: 17px;
     padding-right: 17px;
     background: #aabab0;
@@ -1645,10 +1686,15 @@ body > input[type=radio] {
 }
 
 .fatness-filter label {
-    width: auto;
-    min-height: 20px;
+    display: inline-block;
+    position: relative;
+    max-width: 750px;
+    min-height: 22px;
     margin-right: 21px;
+    margin-bottom: 6px;
+    padding-left: 29px;
     font-size: 16px;
+    vertical-align: top;
     cursor: pointer;
 }
 
@@ -1663,11 +1709,11 @@ body > input[type=radio] {
 
 .fatness-filter label::before {
     content: '';
-    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 0; 
     width: 12px;
     height: 12px;
-    margin-right: 11px;
-    vertical-align: bottom;
     border: 3px solid #aabab0;
     border-radius: 50%; 
     box-shadow: 0 0 0 1.4px #ffffff;
@@ -1691,20 +1737,24 @@ body > input[type=radio] {
 
 .fillings-filter-wrapper {
     float: left;
-    margin-top: 14px;
     font-size: 0px;
+    margin-right: 16px;
+    margin-bottom: 14px;
 }
 
 .fillings-filter-name {
+    max-width: 170px;
     margin-bottom: 6px;
     padding-left: 16px;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.fillings-filter {   
+.fillings-filter {  
     margin: 0;
     padding-top: 8px;
-    padding-bottom: 9px;
     padding-left: 15px;
     padding-right: 15px;
     background: #aabab0;
@@ -1718,9 +1768,11 @@ body > input[type=radio] {
 .fillings-filter label {
     display: inline-block;
     position: relative;
-    padding-left: 30px;
-    width: auto;    
+    max-width: 750px;
+    min-height: 22px;
     margin-right: 25px;
+    margin-bottom: 6px;
+    padding-left: 30px;
     font-size: 16px;
     cursor: pointer;
     vertical-align: middle;
@@ -1742,7 +1794,6 @@ body > input[type=radio] {
     left: 0;    
     width: 18px;
     height: 18px;
-    margin-right: 11px;
     border: 1px solid #ffffff;
     border-radius: 3px; 
 }
@@ -1765,8 +1816,8 @@ body > input[type=radio] {
 }
 
 .filter-form input[type="submit"] { 
-    float: right;  
-    margin-top: 37px;
+    float: left;  
+    margin-top: 23px;
     margin-bottom: 0;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -1807,11 +1858,14 @@ body > input[type=radio] {
 }
 
 .paginator li {
-    float: left;
+    float: left;    
+    margin-right: 3px;
     text-align: center;
     font-size: 16px;
     line-height: 1.3;
-    margin-right: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .paginator li:first-child {

@@ -61,13 +61,16 @@ link.addEventListener('click', function(event){
 close.addEventListener('click', function(event){
 	event.preventDefault();
 	popup.classList.remove('feedback-form-show');
+	popup.classList.remove('feedback-form-error');
 	overlay.classList.remove('feedback-form-overlay-show');
 });
 
 form.addEventListener('submit', function(event){
 	if (!username.value || !email.value || !comment.value) {
 	    event.preventDefault();
-	    alert('Заполните все поля!');
+	    popup.classList.remove('feedback-form-error');
+	    popup.offsetWidth = popup.offsetWidth;
+	    popup.classList.add('feedback-form-error');
 	} else {
 		localStorage.setItem('username', username.value);
 		localStorage.setItem('email', email.value);
@@ -78,6 +81,7 @@ window.addEventListener('keydown', function(event) {
 	if (event.keyCode === 27) {
 		if (popup.classList.contains('feedback-form-show')) {
 				popup.classList.remove('feedback-form-show');
+				popup.classList.remove('feedback-form-error');
 				overlay.classList.remove('feedback-form-overlay-show');
 	    }
 	}
@@ -86,6 +90,7 @@ window.addEventListener('keydown', function(event) {
 overlay.addEventListener('click', function(event) {
 	if (popup.classList.contains('feedback-form-show')) {
 	    popup.classList.remove('feedback-form-show');
+	    popup.classList.remove('feedback-form-error');
 	    overlay.classList.remove('feedback-form-overlay-show');
 	}
 });

@@ -35,7 +35,7 @@
 
       <div class="header-layout-column-right">
         <div class="header-search">
-          <a href="#search">Поиск</a>
+          <a class="header-search-link" href="#search">Поиск</a>
 
           <div class="search-field-wrapper">
             <div class="search-field">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="header-login">
-          <a href="#login">Вход</a>
+          <a class="header-login-link" href="#login">Вход</a>
 
           <div class="login-field-wrapper">
             <div class="login-field">
@@ -67,7 +67,7 @@
         </div>
 
         <div class="header-cart">
-          <a href="#cart">Пусто</a>
+          <a class="header-cart-link" href="#cart">Пусто</a>
 
           <div class="cart-field-wrapper">
             <div class="cart-field">
@@ -130,8 +130,9 @@
 
         <div class="range-filter">
           <div class="price-controls">
-            Цена:<input class="min-price" type="text" value="100 руб.">
-            -<input class="max-price" type="text" value="500 руб.">
+            <span>Цена:</span><input class="min-price" type="text" value="100 руб.">
+
+            <span>-</span><input class="max-price" type="text" value="500 руб.">
           </div>
           
           <div class="range-controls">
@@ -165,13 +166,13 @@
           <div class="fillings-filter-name">Наполнители:</div>
           
           <div class="fillings-filter">
-            <input type="checkbox" id="btn-8" name="choco" checked >
+            <input type="checkbox" id="btn-8" name="choco" checked>
             <label for="btn-8">шоколадные</label>
 
-            <input type="checkbox" id="btn-9" name="powder" checked >
+            <input type="checkbox" id="btn-9" name="powder" checked>
             <label for="btn-9">сахарные присыпки</label>
 
-            <input type="checkbox" id="btn-10" name="fruits" >
+            <input type="checkbox" id="btn-10" name="fruits">
             <label for="btn-10">фрукты</label>
 
             <input type="checkbox" id="btn-11" name="syrup">
