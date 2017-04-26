@@ -320,6 +320,10 @@ li .header-sub-menu-active {
     color: #ffffff;
 }
 
+.header-sub-menu-link {
+  background-color: #f3bdca;
+}
+
 .header-search {
     float: left;
     position: relative;
@@ -1224,7 +1228,8 @@ body > input[type=radio] {
   }
 
    /* скрываем копирайт яндекса */
-.ymaps-2-1-34-copyrights-pane {
+.ymaps-2-1-42-copyright__text,
+.ymaps-2-1-42-copyright__link {
     display: none;
 }
 
@@ -1956,7 +1961,7 @@ body > input[type=radio] {
 }
 
 .footer-social .icon-twit {
-    background: url('../img/sprite.png') no-repeat -10px -379px;    
+    background: url('../img/sprite.png') no-repeat -10px -379px;
     background-clip: padding-box;
     opacity: 0.8;
 }

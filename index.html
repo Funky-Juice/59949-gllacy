@@ -2,9 +2,10 @@
 <html>
   <head>
   	<title>Gllacy - главная</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -22,11 +23,11 @@
 			      <li><a href="#shop">Каталог</a>
 			        <div class="header-sub-menu-wrapper">
 				        <ul class="header-sub-menu">
-				          <li><a class="header-sub-menu-new" href="#">Новинки</a></li>
-				          <li><a href="catalog.html">Сливочное</a></li>
-				          <li><a href="#">Щербеты</a></li>
-				          <li><a href="#">Фруктовый лед</a></li>
-				          <li><a href="#">Мелорин</a></li>
+				          <li><a class="header-sub-menu-new" href="#link">Новинки</a></li>
+				          <li><a class="header-sub-menu-link" href="catalog.html">Сливочное</a></li>
+				          <li><a href="#link">Щербеты</a></li>
+				          <li><a href="#link">Фруктовый лед</a></li>
+				          <li><a href="#link">Мелорин</a></li>
 				        </ul>
 			        </div>
 			      </li>
@@ -61,9 +62,9 @@
 
 		              <input type="submit" value="Войти" name="submit_button">
 
-		              <a href="#">Забыли пароль?</a>
+		              <a href="#reset-password">Забыли пароль?</a>
 
-		              <a href="#">Новая регистрация</a>
+		              <a href="#registration">Новая регистрация</a>
 		            </form>
 		          </div>
 	          </div>
@@ -139,7 +140,7 @@
 
 	          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 
-	          <a class="banner-button button" href="#1">Хочу варенье!</a>
+	          <a class="banner-button button" href="#link">Хочу варенье!</a>
 	        </div>
 
 	        <div class="banner-right">
@@ -147,7 +148,7 @@
 
 	          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 
-	          <a class="banner-button button" href="#1">Хочу шоколадки!</a>
+	          <a class="banner-button button" href="#link">Хочу шоколадки!</a>
 	        </div>
 	      </div>
 
@@ -161,7 +162,7 @@
 	            </p>
 	          </div>
 
-	          <a class="products-title" href="#1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+	          <a class="products-title" href="#link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 	        </li>
 
 	        <li>
@@ -171,7 +172,7 @@
 	            <p class="products-price"><span>380<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг</p>
 	          </div>
 
-	          <a class="products-title" href="#1">Сливочно-кофейное с кусочками шоколада</a>
+	          <a class="products-title" href="#link">Сливочно-кофейное с кусочками шоколада</a>
 	        </li>
 
 	        <li>
@@ -181,7 +182,7 @@
 	            <p class="products-price"><span>355<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг</p>
 	          </div>
 
-	          <a class="products-title" href="#1">Сливочно-клубничное с присыпкой из белого шоколада</a>
+	          <a class="products-title" href="#link">Сливочно-клубничное с присыпкой из белого шоколада</a>
 	        </li>
 
 	        <li>
@@ -191,7 +192,7 @@
 	            <p class="products-price"><span>415<img src="img/rub_icon.svg" width="32" height="37" alt="rub"></span>/кг</p>
 	          </div>
 
-	          <a class="products-title" href="#1">Сливочное крем-брюле с карамельной подливкой</a>
+	          <a class="products-title" href="#link">Сливочное крем-брюле с карамельной подливкой</a>
 	        </li>
 	      </ul>
 
@@ -248,7 +249,7 @@
 
 	        <p>(с 10 до 20 ежедневно)</p>
 
-	        <a class="contacts-info-button button" href="feedback_form.html">Форма обратной связи</a>
+	        <a class="contacts-info-button button" href="feedback_form.html" target="_blank">Форма обратной связи</a>
 
 	        <div class="feedback-form-overlay"></div>
 
@@ -259,11 +260,8 @@
 	            <p>Мы обязательно вам ответим!</p>
 
 	            <input type="text" name="username" placeholder="Как вас зовут?" >
-
 	            <input type="email" name="email" placeholder="Ваша почта для ответа?" >
-
 	            <textarea name="comment" placeholder="Напишите что-нибудь..." ></textarea>
-
 	            <input type="submit" value="Отправить" name="send_form">
 	          </form>
 	        </div>
@@ -280,29 +278,28 @@
 
 	      <div class="footer-sub-menu">
 	        <div class="sub-menu-left">
-	          <a class="sub-menu-marked" href="#1">Для поставщиков</a>
+	          <a class="sub-menu-marked" href="#link">Для поставщиков</a>
 
-	          <a href="#1">О производстве</a>
+	          <a href="#link">О производстве</a>
 	        </div>
 
 	        <div class="sub-menu-right">
-	          <a href="#1">Наши документы</a>
+	          <a href="#link">Наши документы</a>
 
-	          <a href="#1">Экологические стандарты</a>
+	          <a href="#link">Экологические стандарты</a>
 	        </div>
 	      </div>
 
 	      <div class="footer-developer">
 	        <img src="img/developer_logo.svg" width="108" height="37" alt="dev_logo">
 
-	        <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</p>
+	        <p>Сделано в <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a> &#169; 2016</p>
 	      </div>
 	    </footer>
     </div>
 
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-	<script type="text/javascript" src="js/scripts.min.js"></script>
-
+    <script type="text/javascript" src="js/form.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/ymaps.js"></script>
   </body>
 </html>
